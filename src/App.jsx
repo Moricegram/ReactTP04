@@ -1,7 +1,7 @@
 import { Card, Container } from "react-bootstrap";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import FormularioTarea from "./components/FormularioTarea";
+import FormularioTarea from "./components/FormularioTarea";
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
             Ingresa tus tareas
           </h2>
           <hr className="text-light" />
-          {/* <FormularioTarea></FormularioTarea> */}
+          <FormularioTarea></FormularioTarea>
         </Card>
       </Container>
 
