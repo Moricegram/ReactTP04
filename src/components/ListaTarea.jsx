@@ -1,2 +1,0 @@
-const FormularioTarea = () => {};
-return <></>;
