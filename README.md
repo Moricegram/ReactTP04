@@ -6,8 +6,7 @@
 
 ## Ejercicio 4
 
-> _Crear una aplicación web que  muestre una lista de tareas y que al ingresar una tarea en el input, y luego presionar enter, esta tarea se deberá mostrar en una lista como la imagen a continuación:._
-![imagenEjemplo](https://github.com/Moricegram/ReactTP04/blob/main/ejemplo04.jpeg)
+> _Crear una aplicación web que muestre una lista de tareas y que al ingresar una tarea en el input, y luego presionar enter, esta tarea se deberá mostrar en una lista como la imagen a continuación:._ > ![imagenEjemplo](https://github.com/Moricegram/ReactTP04/blob/main/ejemplo04.jpg)
 
 ### Propósitos del Ejercicio
 
