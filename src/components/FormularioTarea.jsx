@@ -3,8 +3,8 @@ import ListaTareas from "./ListaTareas";
 import { useState } from "react";
 
 const FormularioTarea = () => {
-  const [tarea, setTarea] = useState(""); //State para los datos del input o form.control
-  const [listaTareas, setListaTareas] = useState([]); //Array para almacenar los states tarea
+  const [tarea, setTarea] = useState(""); //State para los datos del input o form.control. Tarea es el nombre del State.
+  const [listaTareas, setListaTareas] = useState([]); //Array para almacenar los states tarea. listaTareas el nombre del Array.
   //Funcion para controlar el evento onSubmit del Form.
   const handleSubmit = (e) => {
     //para evitar que recargue la pagina por cada evento submit.
@@ -29,7 +29,7 @@ const FormularioTarea = () => {
             +
           </Button>
         </Form.Group>
-        <ListaTareas></ListaTareas>
+        <ListaTareas propsListaTareas={listaTareas}></ListaTareas>
       </form>
     </>
   );
