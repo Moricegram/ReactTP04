@@ -11,10 +11,20 @@ const FormularioTarea = () => {
     e.preventDefault();
     //Guardar tarea en el Array de listaTareas
     //El operador Spred ...  me sirve para conservar los existente en el Array
+    
     setListaTareas([...listaTareas, tarea]);
     //Borro el input para una nueva carga mediante setTarea porque el value del Input esta vinculado al State tarea.
     setTarea("");
   };
+
+  //Creo una funcion para borrar tareas
+  //Invento un parametro tareaBorrar
+    const borrarTarea = (tareaBorrar)=> {
+      let listaTareasFiltrada = listaTareas.filter( (itemTarea)=> itemTarea !== tareaBorrar )
+      setListaTareas(listaTareasFiltrada)
+    };
+
+
   return (
     <>
       <form onSubmit={handleSubmit}>
@@ -29,7 +39,7 @@ const FormularioTarea = () => {
             +
           </Button>
         </Form.Group>
-        <ListaTareas propsListaTareas={listaTareas}></ListaTareas>
+        <ListaTareas propsListaTareas={listaTareas} borrarTarea={borrarTarea}></ListaTareas>
       </form>
     </>
   );
